@@ -63,21 +63,6 @@ def generate_prompt():
     return prompt
 
 # Generate Caption
-# if st.button("✨ Generate Caption"):
-#     if not context.strip():
-#         st.warning("⚠️ Please enter some context before generating!")
-#     else:
-#         with st.spinner("🧠 AI is generating your caption..."):
-#             llm_engine = ChatGroq(model=selected_model, api_key=GROQ_API_KEY, temperature=0.5)
-#             ai_response = llm_engine.invoke(generate_prompt())
-        
-#         st.subheader("🔥 Your AI-Generated Caption:")
-#         st.code(ai_response, language="markdown")
-        
-#         # Copy button
-#         st.button("📋 Copy Caption", on_click=lambda: st.write(f"Copied to clipboard: {ai_response}"))
-
-# Generate Caption
 if st.button("✨ Generate Caption"):
     if not context.strip():
         st.warning("⚠️ Please enter some context before generating!")
